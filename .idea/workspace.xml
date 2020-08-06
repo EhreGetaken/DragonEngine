@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22a8935a-9074-4cea-a302-98858140e5c1" name="Default Changelist" comment="" />
+    <list default="true" id="22a8935a-9074-4cea-a302-98858140e5c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/dragon/engine/driver/DriverAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/dragon/engine/driver/MySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/dragon/engine/gamehandler/GameManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/dragon/engine/gamehandler/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/dragon/engine/DragonEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/dragon/engine/DragonEngine.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,11 +18,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1fjIlqxQsljMUkcLtdTwZXiQugZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,7 +35,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CoreAPI" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../SparkleMC.de/source/Smash" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -38,10 +52,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1061" y="456" key="FileChooserDialogImpl" timestamp="1596725270126">
+    <state x="1061" y="456" key="FileChooserDialogImpl" timestamp="1596738614450">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400/3840.740.1920.1040@0.0.2560.1400" timestamp="1596725270126" />
+    <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400/3840.740.1920.1040@0.0.2560.1400" timestamp="1596738614450" />
+    <state x="1151" y="603" key="Github.ShareDialog" timestamp="1596737726160">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1151" y="603" key="Github.ShareDialog/0.0.2560.1400/3840.740.1920.1040@0.0.2560.1400" timestamp="1596737726160" />
+    <state x="990" y="323" key="Github.UntrackedFilesDialog" timestamp="1596737733067">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="990" y="323" key="Github.UntrackedFilesDialog/0.0.2560.1400/3840.740.1920.1040@0.0.2560.1400" timestamp="1596737733067" />
     <state x="914" y="315" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596729569490">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
