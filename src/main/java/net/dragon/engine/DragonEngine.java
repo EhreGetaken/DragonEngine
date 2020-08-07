@@ -6,21 +6,32 @@ import net.dragon.engine.logger.LogType;
 import net.dragon.engine.logger.LoggerAPI;
 import net.dragon.engine.player.CollisionDetector;
 import org.bukkit.Bukkit;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.java.JavaPlugin;
 
-public class DragonEngine {
+public class DragonEngine extends JavaPlugin {
 
     private static DragonEngine dragonEngine;
     private static boolean debug;
     private static GameState gameState;
 
-    public static void registerEngine(Plugin plugin) {
+    @Override
+    public void onEnable() {
+        dragonEngine = this;
+        LoggerAPI.log(LogType.INFO, "DragonEngine is ready to use.");
+    }
+
+    @Override
+    public void onDisable() {
+
+    }
+
+    public static void registerEngine() {
         PluginManager pluginManager = Bukkit.getPluginManager();
         debug = false;
         gameState = GameState.STATE_1;
-        pluginManager.registerEvents(new CollisionDetector(), plugin);
-        LoggerAPI.log(LogType.INFO, "Starting DragonEngine " + Utility.VERSION + " @ " + DragonEngine.class);
+        pluginManager.registerEvents(new CollisionDetector(), dragonEngine);
+        LoggerAPI.log(LogType.INFO, "Starting DragonEngine " + Utility.VERSION + " @ " + DragonEngine.class.getName());
     }
 
     public static DragonEngine getDragonEngine() {

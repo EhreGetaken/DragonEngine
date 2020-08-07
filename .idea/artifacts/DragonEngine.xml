@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="DragonEngine">
+    <output-path>$PROJECT_DIR$/../../../TestServer2/plugins</output-path>
+    <root id="archive" name="DragonEngine.jar">
+      <element id="module-output" name="DragonEngine" />
+    </root>
+  </artifact>
+</component>

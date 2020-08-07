@@ -3,8 +3,10 @@ package net.dragon.engine.events;
 import net.dragon.engine.DragonEngine;
 import net.dragon.engine.logger.LogType;
 import net.dragon.engine.logger.LoggerAPI;
+import net.dragon.engine.player.utility.CollisionType;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
@@ -20,11 +22,35 @@ public class PlayerCollideEvent extends Event implements Cancellable {
     Player player;
     Location location;
     Block block;
+    CollisionType collisionType;
+    Player collidedPlayer;
+    Entity collidedEntity;
 
-    public PlayerCollideEvent(Player player, Location location, Block block) {
+    public PlayerCollideEvent(Player player, Location location, Block block, CollisionType collisionType) {
         this.player = player;
         this.location = location;
         this.block = block;
+        this.collisionType = collisionType;
+        if (DragonEngine.getDragonEngine().getDebugMode()) {
+            LoggerAPI.log(LogType.INFO, "Called PlayerCollideEvent on " + player + " @l " + location + " @b " + block);
+        }
+    }
+
+    public PlayerCollideEvent(Player player, Location location, Player collidedPlayer, CollisionType collisionType) {
+        this.player = player;
+        this.location = location;
+        this.collisionType = collisionType;
+        this.collidedPlayer = collidedPlayer;
+        if (DragonEngine.getDragonEngine().getDebugMode()) {
+            LoggerAPI.log(LogType.INFO, "Called PlayerCollideEvent on " + player + " @l " + location + " @b " + block);
+        }
+    }
+
+    public PlayerCollideEvent(Player player, Location location, Entity collidedEntity, CollisionType collisionType) {
+        this.player = player;
+        this.location = location;
+        this.collisionType = collisionType;
+        this.collidedEntity = collidedEntity;
         if (DragonEngine.getDragonEngine().getDebugMode()) {
             LoggerAPI.log(LogType.INFO, "Called PlayerCollideEvent on " + player + " @l " + location + " @b " + block);
         }
@@ -40,6 +66,18 @@ public class PlayerCollideEvent extends Event implements Cancellable {
 
     public Block getBlock() {
         return block;
+    }
+
+    public CollisionType getCollisionType() {
+        return collisionType;
+    }
+
+    public Player getCollidedPlayer() {
+        return collidedPlayer;
+    }
+
+    public Entity getCollidedEntity() {
+        return collidedEntity;
     }
 
     @Override
