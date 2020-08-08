@@ -19,14 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22a8935a-9074-4cea-a302-98858140e5c1" name="Default Changelist" comment="Added DriverAPI.java with testing statements">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/DragonEngine.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/dragon/engine/player/utility/CollisionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+    <list default="true" id="22a8935a-9074-4cea-a302-98858140e5c1" name="Default Changelist" comment="Updated CollisionDetector and PlayerCollideEvent. Added CollisionType for more detail.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/dragon/engine/entity/ArmorStandAnimationAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/dragon/engine/entity/EntityAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/dragon/engine/entity/NBTEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/dragon/engine/item/ItemBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/dragon/engine/DragonEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/dragon/engine/DragonEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/dragon/engine/events/PlayerCollideEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/dragon/engine/events/PlayerCollideEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/dragon/engine/player/CollisionDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/dragon/engine/player/CollisionDetector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,7 +52,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DragonEngineTesting" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CoreAPI" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -77,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596740646539</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated CollisionDetector and PlayerCollideEvent. Added CollisionType for more detail.">
+      <created>1596800073938</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596800073938</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,17 +98,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added DriverAPI.java with testing statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added DriverAPI.java with testing statements" />
+    <MESSAGE value="Updated CollisionDetector and PlayerCollideEvent. Added CollisionType for more detail." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated CollisionDetector and PlayerCollideEvent. Added CollisionType for more detail." />
   </component>
   <component name="WindowStateProjectService">
     <state x="761" y="275" key="#Project_Structure" timestamp="1596740722836">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="761" y="275" key="#Project_Structure/0.0.2560.1400/3840.740.1920.1040@0.0.2560.1400" timestamp="1596740722836" />
-    <state x="1061" y="456" key="FileChooserDialogImpl" timestamp="1596798450226">
+    <state x="1061" y="456" key="FileChooserDialogImpl" timestamp="1596800834209">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400/3840.740.1920.1040@0.0.2560.1400" timestamp="1596798450226" />
+    <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400/3840.740.1920.1040@0.0.2560.1400" timestamp="1596800834209" />
     <state x="1151" y="603" key="Github.ShareDialog" timestamp="1596737726160">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -112,10 +118,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="990" y="323" key="Github.UntrackedFilesDialog/0.0.2560.1400/3840.740.1920.1040@0.0.2560.1400" timestamp="1596737733067" />
-    <state x="873" y="430" key="Vcs.Push.Dialog.v2" timestamp="1596740659340">
+    <state x="873" y="430" key="Vcs.Push.Dialog.v2" timestamp="1596800080611">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="430" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.740.1920.1040@0.0.2560.1400" timestamp="1596740659340" />
+    <state x="873" y="430" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.740.1920.1040@0.0.2560.1400" timestamp="1596800080611" />
     <state x="914" y="315" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596729569490">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
